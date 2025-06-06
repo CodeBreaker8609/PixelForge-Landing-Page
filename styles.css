@@ -1,0 +1,223 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Orbitron", sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #f8f8f2;
+    line-height: 1.6;
+}
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+    background-color: #1f1f2e;
+    border-bottom: 2px solid #00ffff;
+}
+.logo {
+    font-size: 1.2rem;
+}
+.top-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.top-nav a {
+    font-size: 0.8rem;
+    color: #f1f1f1;
+}
+.top-nav a:hover {
+    color: #ff00ff;
+}
+/*Featured Games Section */
+
+.featured-games {
+    padding: 60px 20px;
+    text-align: center;
+}
+.featured-games h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #00ffff;
+    text-shadow: 0 0 8px #00ffff;
+}
+.games-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0 20px;
+}
+.game-card {
+    background: #1f1f2e;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 12px #00ffff55;
+    transition: transform 0.3 ease;
+}
+.game-card:hover {
+    transform: translateY(-5px);
+    animation: pulse 1.5s infinite;
+}
+.game-card p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+.game-crd a {
+    color: #00ffff;
+    text-decoration: underline;
+}
+
+/*Team Section */
+
+.team {
+    padding: 60px 20px;
+    text-align: center;
+}
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #ff00ff;
+    text-shadow: 0 0 8px #ff00ff;
+}
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+.team-member {
+    background: #1f1f2e;
+    padding: 20px;
+    border-radius: 16px;
+    width: 250px;
+    box-shadow: 0 0 12px #ff00ff55;
+}
+.team-member h4 {
+    margin-top: 10px;
+    color: #00ffff;
+}
+
+/*Testimonials */
+
+.testimonials {
+    background: #181818;
+    padding: 60px 20px;
+    text-align: center;
+}
+.testimonials blockquote {
+    margin: 20px auto;
+    max-width: 600px;
+    font-style: italic;
+    border-left: 5px solid #00ffff;
+    padding-left: 20px;
+}
+
+/*Newsletter Section */
+
+.newsletter {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #1f1f2e;
+}
+.newsletter h2 {
+    color: #ff00ff;
+    margin-bottom: 10px;
+}
+.newsletter form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin-inline: auto;
+}
+.newsletter input {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px #00ffff;
+    }
+    50% {
+        box-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff;
+    }
+    100% {
+        box-shadow: 0 0 10px #00ffff;
+    }
+}
+.newsletter button {
+    background: #00ffff;
+    color: #121212;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffff;
+    animation: pulse 2s infinite;
+    transition: background 0.3s ease;
+}
+.newsletter button:hover {
+    background: #ff00ff;
+    color: #fff;
+    box-shadow: 0 0 15px #ff00ff;
+}
+
+/*Footer Section */
+
+.site-footer {
+    background: #121212;
+    color: #999;
+    text-align: center;
+    padding: 30px 10px;
+    border-top: 2px solid #00ffff;
+}
+.socials a {
+    color: #00ffff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.socials a:hover {
+    color: #ff00ff;
+}
+
+/*Media Queries*/
+
+@media (max-width: 600px) {
+    .site-header {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .top-nav ul {
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.games-grid {
+    grid-template-columns: 1fr;
+}
+.team-grid {
+    flex-direction: column;
+    align-items: center;
+}
+}
