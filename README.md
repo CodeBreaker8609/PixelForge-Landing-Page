@@ -6,9 +6,7 @@ Built to practice core HTML and CSS skills, including layouts with Flexbox and G
 
 🖼️ Preview
 
-🔗 Live Demo (GitHub Pages)
-
-(Update the link after publishing with GitHub Pages)
+🔗 Live Demo https://codebreaker8609.github.io/PixelForge-Landing-Page/
 
 🚀 Features
 🎨 Custom pixel-style design with glowing effects
